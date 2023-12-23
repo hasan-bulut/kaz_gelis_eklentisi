@@ -1,0 +1,67 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"playerhasan1903"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.7.7"
+			],
+			"dash": [
+				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+			]
+		}
+	},
+	"header": {
+		"name": "CLOyun Kaz Geliş Eklentisi",
+		"description": "CLOyun tarafından basit Kaz Geliş eklentisi",
+		"min_engine_version": [
+			1,
+			20,
+			50
+		],
+		"uuid": "9c8d0428-f26b-4b8a-8db2-996aa00f8a26",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "d2277f90-80f5-42f3-a803-7e7108e28ec1",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "1a7433ce-2e67-460d-bf8e-c5d39ab3e644",
+			"entry": "scripts/main.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.8.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-gametest",
+			"version": "1.0.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.2.0-beta"
+		}
+	]
+}

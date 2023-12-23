@@ -1,0 +1,44 @@
+{
+	"type": "minecraftBedrock",
+	"name": "CLOyun Kaz Geliş Eklentisi",
+	"namespace": "kaz_gelis",
+	"authors": [
+		"playerhasan1903"
+	],
+	"targetVersion": "1.20.50",
+	"description": "CLOyun tarafından basit Kaz Geliş eklentisi",
+	"experimentalGameplay": {
+		"holidayCreatorFeatures": false,
+		"creationOfCustomBiomes": false,
+		"upcomingCreatorFeatures": false,
+		"enableGameTestFramework": true,
+		"experimentalMolangFeatures": false,
+		"educationEdition": false
+	},
+	"bdsProject": false,
+	"packs": {
+		"behaviorPack": "./BP"
+	},
+	"worlds": [
+		"./worlds/*"
+	],
+	"compiler": {
+		"plugins": [
+			"generatorScripts",
+			"typeScript",
+			"entityIdentifierAlias",
+			"customEntityComponents",
+			"customItemComponents",
+			"customBlockComponents",
+			"customCommands",
+			"moLang",
+			"formatVersionCorrection",
+			[
+				"simpleRewrite",
+				{
+					"packName": "CLOyun Kaz Geliş Eklentisi"
+				}
+			]
+		]
+	}
+}
