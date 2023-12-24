@@ -22,11 +22,6 @@ world.beforeEvents.playerBreakBlock.subscribe((event) => {
 
     kgBlocks.forEach(value => {
         var valueList = value.split(",");
-        // player.sendMessage(valueList.toString());
-        // player.sendMessage(block.location.x.toString());
-        // player.sendMessage(block.location.y.toString());
-        // player.sendMessage(block.location.z.toString());
-        // player.sendMessage({ x: parseInt(valueList[0], 10), y: parseInt(valueList[1], 10), z: parseInt(valueList[2], 10) }.toString());
         if (block.location.x == parseInt(valueList[0], 10) &&
             block.location.y == parseInt(valueList[1], 10) &&
             block.location.z == parseInt(valueList[2], 10)) {
@@ -50,7 +45,7 @@ world.beforeEvents.chatSend.subscribe(event => {
 
     var kgBlocks = db.get("kgBlocks") ?? [];
 
-    if (msgList.length == 5 && msgList.includes("deneme")) {
+    if (msgList.length == 5 && msgList.includes("#kazgelis")) {
         msgList.shift();
         kgBlocks.push(msgList.join(","));
         db.set("kgBlocks", kgBlocks);
