@@ -1,5 +1,5 @@
 import { world, system } from "@minecraft/server";
-import { JsonDatabase } from "./database";
+import { JsonDatabase } from "./database/database";
 
 const db = new JsonDatabase("database");
 db.load();
